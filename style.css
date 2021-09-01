@@ -123,7 +123,7 @@ font-family: "Poppins", sans-serif;
     background: rgb(39, 39, 39);
 }
 
-.details h3, h4 {
+.details h3, .details h4 {
    color: white;
 }
 
@@ -175,13 +175,36 @@ font-family: "Poppins", sans-serif;
     box-shadow: 3px 3px rgb(59, 59, 49);
 }
 
+/*company*/
+.company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 300px;
+}
+
+.company h3 {
+    font-size: 25px;
+    color:rgb(116, 106, 24);
+    padding-bottom: 20px;
+}
+
+.company p{
+    color: rgb(97, 96, 96);
+}
+
 /*staff section*/
 .staff {
-   padding: 150px 250px;
+   padding: 50px 300px;
+   display: flex;
+   flex-direction: row; 
 }
 
 .about{
-    width: 35%;
+    width: 45%;
+    padding-right: 80px;
 }
 .about h3{
     font-size: 25px;
@@ -190,6 +213,59 @@ font-family: "Poppins", sans-serif;
 .about p{
     color: rgb(97, 96, 96);
 }
+
+/*cards*/
 .people{
-    width: 45%;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.people_card1 {
+    width: 47%;
+    height: 80%;
+    box-sizing: border-box;
+    background:rgb(39, 39, 39);
+    box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.1), 0 4.4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.people_card1 img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+.people_details .name, .people_details .prof {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.people_details .name h3, .people_details .name i {
+    color: rgb(116, 106, 24);
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+.people_details .prof h4, .people_details .prof i  {
+    color: rgb(116, 106, 24);
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
+.name i, .prof i {
+    cursor: pointer;
+    padding-right: 15px;
+    font-weight: bolder;
+}
+
+/*treatments*/
+.treatments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 150px;
 }
