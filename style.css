@@ -267,5 +267,70 @@ font-family: "Poppins", sans-serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 80px 150px;
+    padding: 150px 300px;
+    background: rgb(97, 96, 96);
+}
+
+.treatments p {
+    color:white;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.treatments h3 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+/*treatment cards*/
+.treatment_menu {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.menu_card {
+    width: 95%;
+    box-sizing: border-box;
+    background:white;
+    box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.1), 0 4.4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.menu_card img {
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+.menu_name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.menu_name h3, .menu_name a{
+    color: rgb(116, 106, 24);
+    font-size: 25px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.treatment_info h4 {
+    color: rgb(97, 96, 96);
+    padding: 15px;
+}
+
+.price {
+    font-size: 18px;
+    padding: 10px;
+    background: rgb(241, 239, 188);
+    border: 2px solid rgb(116, 106, 24);
+    border-radius: 10%;
 }
