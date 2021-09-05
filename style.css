@@ -54,6 +54,10 @@ font-family: "Poppins", sans-serif;
     font-weight: bolder;
 }
 
+#bar {
+    display: none;
+}
+
  /*background top */
 .bg {
     background-image: url(img/bg.jpg);
@@ -454,4 +458,152 @@ font-family: "Poppins", sans-serif;
     color: rgb(116, 106, 24);
     font-weight: 800;
     padding: 5px;
+}
+
+/*///////////mid////////////*/
+@media screen and (max-width:1700px) {
+    .details {
+    padding: 100px 250px;
+}
+}
+
+@media screen and (max-width:1400px) {
+    .details {
+    padding: 100px 180px;
+}
+}
+
+/*////////////small screen///////////////*/
+@media screen and (max-width: 1100px) {
+
+ /*nav*/
+.nav {
+    padding: 15px 40px;
+}
+
+.nav h2 {
+    font-size: 25px;
+}
+
+#item li{
+    padding-right: 25px;
+}
+#item li a{
+    font-size: 15px;
+}
+
+.icon i{
+    padding-right: 15px;
+}
+
+ /*info & hours*/
+.details {
+    padding: 100px 100px;
+}
+
+.details h3 {
+   font-size: 25px;
+   padding-bottom: 10px;
+}
+
+.details h4 {
+   font-size: 22px;
+   padding-bottom: 10px;
+}
+.details h5 {
+   font-size: 18px;
+   padding-bottom: 10px;
+}
+
+.info a {
+    color:white;
+    font-size: 18px;
+}
+}
+
+/*////////////////tab screen/////////////////////*/
+@media screen and (max-width: 900px) {
+    
+/*nav*/
+.nav h2 {
+    font-size: 25px;
+}
+#item{
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 80vh;
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 100;
+    margin-top: 70px;
+    transition: 0.5s;
+}
+#item li {
+    padding-bottom: 25px;
+    padding-right: 5px;
+}
+
+#item li a{
+    font-size: 22px;
+}
+
+#bar {
+    display: initial;
+    padding-right: 20px;
+   font-size: 25px;
+   cursor: pointer;
+   color: rgb(116, 106, 24);
+}
+
+.icon i{
+    padding: 15px 25px 0px 25px;
+}
+
+/*top section*/
+.mid p {
+    font-size: 25px;
+}
+.mid h3 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.btn a{
+    margin: 5px;
+}
+
+.btn a.book, .btn a.more{
+    padding: 10px 20px;
+}
+
+ /*info & hours*/
+.details {
+    display: block;
+    padding: 100px 0px;
+}
+.info, .hours {
+   width: 80%;
+   margin: 0 auto;
+}
+
+.info {
+    padding-bottom: 25px;
+}
+
+.hours {
+    padding-top: 50px;
+    padding-left: 50px;
+    border-left: none;
+    border-top: 1px solid rgb(97, 96, 96);
+}
+}
+
+/*//////////mobile//////////////*/
+@media screen and (max-width: 600px) {
+.btn a.book, .btn a.more {
+   display: block;
+}
 }
