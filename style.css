@@ -183,6 +183,7 @@ font-family: "Poppins", sans-serif;
     align-items: center;
     text-align: center;
     padding: 80px 300px;
+    background-color: whitesmoke;
 }
 
 .company h3 {
@@ -200,6 +201,7 @@ font-family: "Poppins", sans-serif;
    padding: 50px 300px;
    display: flex;
    flex-direction: row; 
+   background-color: whitesmoke;
 }
 
 .about{
@@ -278,14 +280,15 @@ font-family: "Poppins", sans-serif;
 }
 
 .treatments h3 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
     padding-bottom: 40px;
+   text-transform:capitalize;
 }
 
 /*treatment cards*/
 .treatment_menu {
-    width: 90%;
+    width: 92%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -294,10 +297,10 @@ font-family: "Poppins", sans-serif;
 }
 
 .menu_card {
-    width: 95%;
+    width: 98%;
     box-sizing: border-box;
-    background:white;
-    box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.1), 0 4.4px 10px rgba(0, 0, 0, 0.15);
+    background-color: whitesmoke;
+    box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.1), 0 4.4px 10px rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .menu_card img {
@@ -333,4 +336,122 @@ font-family: "Poppins", sans-serif;
     background: rgb(241, 239, 188);
     border: 2px solid rgb(116, 106, 24);
     border-radius: 10%;
+}
+
+/*treatment last grid*/
+.treatment_menu1 {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+/*contact*/
+
+.contact {
+   padding: 150px 500px;
+   background: rgb(39, 39, 39);
+   display: flex;
+   justify-content: space-between;
+}
+
+.contact_us {
+   width: 45%;
+}
+
+.contact_us h3{
+   color: white;
+   font-size: 30px;
+   text-transform:capitalize;
+   padding-bottom: 15px;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   padding-bottom: 40px;
+}
+
+.form input, .form textarea {
+   width: 100%;
+   padding: 5px;
+   border: 2px solid rgb(241, 239, 188);
+   outline: none;
+   margin: 5px 0px;
+}
+
+.form input:focus, .form textarea:focus {
+   width: 100%;
+   padding: 5px;
+   border: 2px solid rgb(116, 106, 24);
+}
+
+.form input::placeholder, .form textarea::placeholder{
+   font-size: 15px;
+   color: rgb(39, 39, 39);
+}
+
+
+.form a {
+    width: 100%;
+    color:white;
+    font-size: 20px;
+    padding: 10px 10px;
+    background: rgb(82, 81, 81);
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form a:hover {
+    background: rgb(97, 96, 96);
+    box-shadow: 3px 3px rgb(59, 59, 49);
+}
+
+.contact_us p{
+   color: rgb(116, 106, 24);
+   font-size: 18px;
+   margin: 15px 0px;
+   text-transform:capitalize;
+   font-weight: 600;
+}
+
+/*map*/
+.map {
+    width: 45%;
+    padding-left: 100px;
+    border-left: 1px solid rgb(97, 96, 96);
+}
+
+.map p {
+    color: white;
+    padding: 25px 0px;
+    font-size: 17px;
+}
+
+.map p i {
+    color: rgb(116, 106, 24);
+    padding-right: 5px;
+}
+
+/*footer*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    border-top: 3px solid rgb(116, 106, 24);
+    font-weight: 700;
+    background-color: whitesmoke;
+}
+
+.footer p i {
+    color: rgb(116, 106, 24);
+    font-weight: 800;
+    padding: 5px;
 }
