@@ -15,7 +15,7 @@ font-family: "Poppins", sans-serif;
     align-items: center;
     width: 100%;
     padding: 20px 80px;
-    background: rgb(39, 39, 39);
+    background: rgb(33, 34, 26);
     z-index: 1;
     position: fixed;
 }
@@ -31,6 +31,7 @@ font-family: "Poppins", sans-serif;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background: rgb(33, 34, 26);
 }
 #item li{
     list-style: none;
@@ -56,6 +57,7 @@ font-family: "Poppins", sans-serif;
 
 #bar {
     display: none;
+    color:white;
 }
 
  /*background top */
@@ -460,17 +462,147 @@ font-family: "Poppins", sans-serif;
     padding: 5px;
 }
 
+
+
+
+
 /*///////////mid////////////*/
 @media screen and (max-width:1700px) {
     .details {
     padding: 100px 250px;
 }
+
+/*staff section*/
+.staff {
+   padding: 50px 150px;
+}
+
+.about{
+    width: 40%;
+    padding-right: 60px;
+}
+
+/*cards*/
+.people{
+    width: 60%;
+}
+
+.people_card1 {
+    width: 48%;
+}
+
+/*treatments*/
+.treatments {
+    padding: 150px 150px;
+}
+
+.menu_name h3, .menu_name a{
+    font-size: 22px;
+}
+
+.treatment_info h4 {
+    padding-bottom: 100px;
+}
+
+/*contact*/
+
+.contact {
+   padding: 150px 200px;
+}
+
 }
 
 @media screen and (max-width:1400px) {
     .details {
     padding: 100px 180px;
 }
+/*company*/
+.company {
+    margin:0 auto;
+    padding: 80px 100px;
+}
+
+
+/*staff section*/
+.staff {
+   padding: 50px 0px;
+   display: block;
+}
+
+.about{
+    width: 80%;
+    margin: 0 auto;
+    padding-right: 0px;
+    padding-bottom: 80px;
+    text-align: center;
+} 
+
+/*cards*/
+.people{
+    width: 70%;
+    margin: 0 auto;
+    height: 580px;
+}
+
+.people_card1 {
+    width: 48%;
+} 
+
+/*treatments*/
+.treatments {
+    padding: 150px 80px;
+}
+/*treatment cards*/
+.treatment_menu {
+    width: 98%;
+}
+
+.menu_card img {
+    height: 30%;
+}
+
+.menu_card {
+    text-align: center;
+}
+
+.menu_name {
+    display: block;
+}
+
+.treatment_info h4 {
+    padding-bottom: 50px;
+}
+
+.price {
+    font-size: 18px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/*treatment last grid*/
+.treatment_menu1 {
+    width: 70%;
+}
+
+/*contact*/
+
+.contact {
+   padding: 150px 100px;
+}
+
+.contact_us {
+   width: 40%;
+}
+
+
+
+/*map*/
+.map {
+    width: 50%;
+    padding-left: 80px;
+}
+
 }
 
 /*////////////small screen///////////////*/
@@ -516,9 +648,48 @@ font-family: "Poppins", sans-serif;
 }
 
 .info a {
-    color:white;
     font-size: 18px;
 }
+
+/*treatments*/
+.treatments {
+    padding: 150px 80px;
+
+}
+/*treatment cards*/
+.treatment_menu,
+.treatment_menu1 {
+    width: 90%;
+    display: block;
+    padding-bottom: 0px;
+}
+
+.price {
+    width: 20%;
+}
+
+/*contact*/
+
+.contact {
+   padding: 150px 100px;
+   display: block;
+
+}
+
+.contact_us {
+   width: 50%;
+  margin: 0 auto;
+}
+
+/*map*/
+.map {
+    width: 50%;
+    padding-left: 0px;
+    margin: 0 auto;
+    border-left: none;
+}
+
+
 }
 
 /*////////////////tab screen/////////////////////*/
@@ -536,7 +707,6 @@ font-family: "Poppins", sans-serif;
     position: fixed;
     top: 0px;
     right: -300px;
-    background-color: rgba(0,0,0,0.8);
     z-index: 100;
     margin-top: 70px;
     transition: 0.5s;
@@ -555,7 +725,6 @@ font-family: "Poppins", sans-serif;
     padding-right: 20px;
    font-size: 25px;
    cursor: pointer;
-   color: rgb(116, 106, 24);
 }
 
 .icon i{
@@ -597,13 +766,78 @@ font-family: "Poppins", sans-serif;
     padding-top: 50px;
     padding-left: 50px;
     border-left: none;
-    border-top: 1px solid rgb(97, 96, 96);
+}
+
+/*cards*/
+.people{
+    width: 90%;
+}
+
+/*contact*/
+.contact_us {
+   width: 80%;
+}
+
+/*map*/
+.map {
+    width: 80%;
 }
 }
+
+
 
 /*//////////mobile//////////////*/
 @media screen and (max-width: 600px) {
 .btn a.book, .btn a.more {
    display: block;
+}
+/*company*/
+.company {
+    margin:0 auto;
+    padding: 80px 60px;
+}
+
+.staff {
+   padding-bottom: 400px;
+}
+
+/*cards*/
+.people{
+    width: 80%;
+    display: block;
+}
+.people_card1 {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/*treatments*/
+.price {
+    width: 40%;
+}
+
+/*contact*/
+.contact {
+   padding: 150px 50px;
+}
+/*map*/
+.map {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 450px) {
+    /*treatments*/
+.treatments {
+    padding: 150px 20px;
+}
+    /*contact*/
+.contact {
+   padding: 150px 0px;
+}
+/*map*/
+.map {
+   margin-left: 10px;
 }
 }
